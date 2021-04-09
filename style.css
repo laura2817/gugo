@@ -1,0 +1,109 @@
+:root {
+    --main-letter: 'Shadows Into Light Two', cursive;
+    --second-letter: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERALES */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.home__img {
+    width: 100px;
+    margin-left: 50px;
+}
+
+.home__ul {
+    display: flex;
+    list-style: none;
+}
+
+.home__li {
+    padding-right: 50px;
+}
+
+.home__li a {
+    text-decoration: none;
+    color: rgb(196, 26, 45);
+}
+
+
+.title {
+    font-family: var(--main-letter);
+}
+
+.text, .home__li a {
+    font-family: var(--second-letter);
+}
+/* Index */
+
+
+
+.learn__main {
+    display: flex;
+    margin: 50px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.learn {
+    padding: 0;
+    margin-right: 50px;
+}
+
+.learn__title {
+    font-size: 50px;
+}
+
+.info {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 80px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 25px;
+    background-color: rgb(210, 210, 210);
+}
+
+.info__title {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.info__form {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 20px 50px;
+    grid-template-rows: repeat(3, 50px);
+}
+
+
+.info__input {
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button {
+    color: rgb(210, 210, 210);
+    background-color: rgb(196, 26, 45);
+    margin-left: 150px;
+}
+
+
+
+/* Us */
+.know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
