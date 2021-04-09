@@ -9,6 +9,7 @@ body {
 }
 
 /* GENERALES */
+/* header */
 .home {
     display: flex;
     justify-content: space-between;
@@ -32,9 +33,10 @@ body {
 
 .home__li a {
     text-decoration: none;
-    color: rgb(196, 26, 45);
+    font-weight: 600;
 }
 
+/* letras y fuentes */
 
 .title {
     font-family: var(--main-letter);
@@ -44,6 +46,7 @@ body {
     font-family: var(--second-letter);
 }
 
+/* footer */
 
 .footer {
     height: 50px;
@@ -108,25 +111,54 @@ body {
 
 
 
-/* Us */
-.know {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* US */
+
+/* Primera sección */
+.know__us {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
 }
 
 .know__title {
     font-size: 40px;
     color: rgb(210, 210, 210);
-    align-self: flex-start;
     margin-left: 50px;
 }
 
-.know__team {
-    display: flex;
+.know__span {
+    color: rgb(196, 26, 45);
+}
+
+.know__title--us {
+    color: rgb(0, 68, 133);
+}
+
+
+/* segunda sección */
+
+.team {
     margin: 25px 60px;
     text-align: center;
 }
 
+.team__title {
+    color: rgb(0, 68, 133);
+    font-size: 40px;
+}
+
+
+.team__gugo {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.team__us {
+    width: 300px;
+    padding: 0 20px;
+}
 
 
