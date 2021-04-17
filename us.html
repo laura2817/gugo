@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/gugo-img.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&family=Single+Day&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Nosotros - Gugo</title>
 </head>
@@ -19,10 +19,10 @@
                     <a href="index.html">Inicio</a>
                 </li>
                 <li class="home__li">
-                    <a href="#">Nosotros (우리)</a>
+                    <a href="#">Nosotros</a>
                 </li>
                 <li class="home__li">
-                    <a href="curses.html">Cursos (수업)</a>
+                    <a href="curses.html">Cursos</a>
                 </li>
                 <li class="home__li">
                     <a href="">Material descargable</a>
@@ -36,9 +36,12 @@
 
     <main>
         <section class="know">
-            <h1 class="know__title title">Nosotros <span class="know__span">우리</span></h1>
-            <div class="know__us">
-                <article>
+            <h1 class="know__title title">nosotros <span class="know__span">우리</span></h1>
+            <article class="know__us">
+                <div class="know__content--img">
+                    <img class="know__img" src="img/ilustraciones gugó-03.png" alt="team">
+                </div>
+                <div class="know__content">
                     <h2 class="know__title--us title">¿Quienes somos?</h2>
                     <p class="know__text text">Somos un grupo de personas con intereses, orígenes y formaciones muy distintos; pero, con algunas cositas en común:</p>
                     <ul class="know__ul">
@@ -46,16 +49,36 @@
                         <li class="know__li text">Nos apasiona aprender </li>
                         <li class="know__li text">Queremos compartir lo que sabemos</li>
                     </ul>
-                </article>
-                <article>
+                </div>
+                <div class="know__content--vector">
+                    <img class="know__vector" src="img/vactor.png" alt="vector">
+                </div>
+            </article>
+            <article class="know__us">
+                <div class="know__content--second">
                     <h2 class="know__title--us title">¿Qué hacemos?</h2>
                     <p class="know__text text">Enseñamos coreano, generamos contenido para quienes aprenden de manera autodidacta y compartimos todo lo que sabemos y seguimos aprendiendo sobre Corea y su cultura.</p>
-                </article>
-                <article>
+                </div>
+                <div class="know__content--imgs">
+                    <img class="know__img--second" src="img/ilustraciones gugó-04.png" alt="">
+                </div>
+                <div class="know__what--vector">
+                    <img class="know__what" src="img/vactor.png" alt="vector">
+                </div>
+            </article>
+            <article class="know__us">
+                <div class="know__content--img">
+                    <img class="know__img" src="img/ilustraciones gugó-02.png" alt="">
+                </div>
+                <div class="know__content">
                     <h2 class="know__title--us title">¿Cómo lo hacemos?</h2>
-                    <p class="know__text text">Siendo responsables con la información y contenidos que compartimos, respetando y valorando el trabajo individual, capacitándonos permanentemente, trabajando en equipo, valorando y celebrando las diferencias culturales y de pensamiento; pero, sobre todo, con mucha pasión y compromiso. </p>
-                </article>
-            </div>
+                    <p class="know__text text">Siendo responsables con la información y contenidos que compartimos, respetando y valorando el trabajo individual, capacitándonos permanentemente, trabajando en equipo, valorando y celebrando las diferencias culturales y de pensamiento; pero, sobre todo, con mucha pasión y compromiso.</p>
+                </div>
+                <div class="know__how--vector">
+                    <img class="know__how" src="img/vactor.png" alt="vector">
+                </div>
+            </article>
+        </div>
         </section>
 
         <section class="team">
@@ -101,14 +124,17 @@
     </main>
 
     <footer class="footer">
-        <a href="https://www.instagram.com/gugocoreanovirtual/">
-            <img class="footer__img" src="img/icon/iconInstagram.png" alt="logo-instagram">
-        </a>
-        <a href="https://www.facebook.com/gugocoreanovirtual">
-            <img class="footer__img" src="img/icon/iconFacebook.png" alt="logo-facebook">
-        </a>
-        <p class="footer__korean text">연락</p>
-        <p class="footer__mail text">info@gugoweb.com</p>
+        <div>
+            <a href="https://www.instagram.com/gugocoreanovirtual/">
+                <img class="footer__img" src="img/icon/iconInstagram.png" alt="logo-instagram">
+            </a>
+            <a href="https://www.facebook.com/gugocoreanovirtual">
+                <img class="footer__img" src="img/icon/iconFacebook.png" alt="logo-facebook">
+            </a>
+        </div>
+        <div>
+            <p class="footer__mail text"><span class="footer__korean text">연락</span> info@gugoweb.com</p>
+        </div>
     </footer>
 </body>
 </html>
