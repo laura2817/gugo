@@ -184,7 +184,7 @@ body {
 /* US */
 
 /* Primera sección */
-.know__title, .curses__title {
+.know__title, .curses__title, .material__title {
     color: #D1D1D1;
     font-size: 50px;
     margin-left: 60px;
@@ -194,7 +194,7 @@ body {
     align-self: center;
 }
 
-.know__span, .curses__span {
+.know__span, .curses__span, .material__span {
     color: rgb(196, 26, 45);
     font-family: var(--korean-letter);
     font-weight: 600;
@@ -327,6 +327,8 @@ body {
 
 .curses__content--text {
     text-align: center;
+    position: relative;
+    z-index: 50;
 }
 
 .curses__how {
@@ -344,7 +346,7 @@ body {
     justify-content: center;
     align-self: center;
     border-radius: 10px;
-    
+    position: relative;
 }
 
 .curses__how--text {
@@ -368,4 +370,139 @@ body {
     width: 800px;
     margin: 60px auto;
     font-size: 20px;
+}
+
+
+.curses__vector, .curses__vector--two {
+    overflow: hidden;
+    position: absolute;  
+}
+
+.curses__vector {
+    width: 800px;
+    height: 600px;
+    right: 0;
+    top: 120px;
+}
+
+.curses__vector--img {
+    width: 700px;
+    transform: rotate(130deg);
+    position: relative;
+    top: 30px;
+    right: -320px;
+}
+
+.curses__vector--two {
+    width: 600px;
+    height: 500px;
+    top: 375px;
+}
+
+.curses__vector--imgt {
+    width: 600px;
+    transform: rotate(140deg);
+    position: relative;
+    left: -150px;
+    top: 25px;
+}
+
+
+/* MATERIAL */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__title {
+    color: rgb(0, 68, 133);
+    font-size: 30px;
+}
+
+.content__text {
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.material__content {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 30px;
+}
+
+.material__name {
+    color: rgb(0, 68, 133);
+}
+
+.material__art {
+    background-color: #F8EEC9;
+    display: flex;
+    border-radius: 20px;
+}
+
+.material__download {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    color: rgb(210, 210, 210);
+    background-color: rgb(0, 68, 133);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.material__level {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(0, 68, 133);
+    color: rgb(210, 210, 210);
+}
+
+.material__art--level {
+    margin: 60px 20px;
+    text-align: center;
+}
+
+.material__img {
+    margin: 70px 20px;
+}
+
+
+
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1041px) {
+    /* index */
+    .learn__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learn {
+        margin-left: 50px;
+    }
+
+    .learn__img--second {
+        top: 200px;
+    }
+
+    .info {
+        position: relative;
+        left: 0;
+    }
+}
+
+
+@media (max-width: 720px) {
+    
 }
