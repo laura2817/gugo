@@ -143,7 +143,7 @@ if (!existe_sesion()){
 
 		document.getElementsByTagName("body")[0].prepend(div);
 
-		document.getElementById("login_button").addEventListener("click", auth,false)
+		document.getElementById("login_button").addEventListener("click", auth, false)
 	}else{
 		log_out()
 	}
@@ -182,7 +182,7 @@ function sesion(){
 
 function existe_sesion(){
 let sesion_ = document.getElementById("inicio_de_sesion")
-sesion_.addEventListener('click',   login ,false)
+sesion_.addEventListener('click', login, false)
 
 	if(sessionStorage.getItem('sesion')){
 		sesion_.innerHTML = "Cerrar sesión"
