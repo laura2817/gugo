@@ -117,6 +117,9 @@ return (`
 	<div class="login-help">
 		<a href="#">Crear cuenta</a> - <a href="#">Olvide mi clave</a>
 	</div>
+  <script>
+  $("#modal_login").animatedModal();
+</script>
 </div>
 
 `)}
