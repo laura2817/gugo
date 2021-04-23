@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* GENERALES */
@@ -15,10 +16,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0;
-    border-bottom: 1px solid rgb(196, 26, 45);
+    box-shadow: 0 0 10px 1px #999999;;
 }
 
 .home__img {
@@ -186,9 +188,10 @@ body {
 /* US */
 
 /* Primera sección */
+
 .know__title, .curses__title, .material__title {
     color: #D1D1D1;
-    font-size: 50px;
+    font-size: 4vw;
     margin-left: 60px;
 }
 
@@ -204,11 +207,11 @@ body {
 
 .know__title--us {
     color: rgb(0, 68, 133);
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 .know__text, .know__li {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .know__content--img {
@@ -316,6 +319,10 @@ body {
 .team__us {
     width: 300px;
     padding: 0 20px;
+}
+
+.team__img {
+    width: 120px;
 }
 
 
@@ -519,7 +526,7 @@ body {
 
     .learn__text {
         margin-left: 150px;
-        font-size: 2.2vw;
+        font-size: 1.8vw;
 
     }
 
@@ -540,6 +547,167 @@ body {
     .info__content {
         display: none;
     }
+
+    /* US */
+
+    .know__img {
+        width: 300px;
+        top: 50px;
+    }
+
+    .know__how--vector {
+        width: 600px;
+    }
+
+    .vector {
+        top: 70em;
+    }
+
+    .know__how, .know__vector {
+        width: 500px;
+    }
+
+    .know__text, .know__li {
+        width: 350px;
+        font-size: 2vw;
+    }
+
+    .know__us {
+        margin: 0 120px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-gap: 20px;
+    }
+
+    .know__content--imgs {
+        width: 500px;
+    }
+
+    .know__img--second {
+        width: 400px;
+    }
+
+    .know__what--vector {
+        width: 600px;
+    }
+
+    .know__what {
+        width: 450px;
+        left: 100px;
+        top: 0;
+        position: relative;
+    }
+
+    .know__us:last-child {
+        margin-top: 0;
+    }
+
+    .know__how--vector {
+        top: 62rem;
+        height: 400px;
+    }
+
+    .team {
+        margin: 25px;
+    }
+
+    .team__img {
+        width: 70px;
+    }
+
+    .team__us--title {
+        font-size: 1.5vw;
+    }
+
+    .team__us--text {
+        font-size: 1,8vw;
+    }
+
+}
+
+
+@media (max-width: 950px) {
+    /* US */
+
+    .know__title--us {
+        margin-top: 70px;
+    }
+
+    .know__text, .know__li {
+        width: 600px;
+        text-align: center;
+        position: relative;
+        z-index: 50;
+    }
+
+    .know__text {
+        margin-top: 90px;
+    }
+
+    .know__content {
+        display: block;
+    }
+
+    .know__v--img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .know__v {
+        position: relative;
+        right: -200px;
+        top: 0;
+    }
+
+    .know__content--vector {
+        top: 80px;
+        left: 400px;
+    }
+
+    .know__vector {
+        width: 400px;
+    }
+
+    .text__what {
+        width: 300px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .know__content--second {
+        margin-top: 50px;
+    }
+
+    .us__what {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+    }
+
+    .know__what--vector {
+        left: -150px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .know__what {
+        width: 400px;
+        transform: rotate(160deg);
+    }
+    
+
+    .know__img--second {
+        width: 300px;
+    }
+
+    .know__content--imgs {
+        display: block;
+        position: absolute;
+        top: 40em;
+        left: 50px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -592,6 +760,10 @@ body {
 
 
 @media (max-width: 710px) {
+    .home__img {
+        margin: 0 20px;
+    }
+
     .info {
         width: 250px;
     }
@@ -651,9 +823,11 @@ body {
 }
 
 @media (max-width: 625px) {
+
+    
     .learn__img--second {
         left: 10px;
-        top: 350px;
+        top: 300px;
         width: 150px;
     }
 
@@ -666,9 +840,6 @@ body {
 
 @media (max-width: 450px) {
 
-    .info {
-        max-width: 100%;
-    }
     .learn__img--second {
         left: 10px;
         top: 350px;
@@ -677,7 +848,27 @@ body {
 
     .learn__text {
         margin-left: 90px;
+        width: 180px;
+    }
+
+    .learn__img {
+        width: 400px;
+    }
+
+    .info {
         width: 150px;
+    }
+
+    .info__title {
+        text-align: center;
+    }
+
+    .info__form {
+        margin-left: 15px;
+    }
+
+    .button {
+        margin-left: 18px;
     }
 
 }
