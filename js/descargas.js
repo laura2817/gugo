@@ -9,10 +9,12 @@ lista(getServerFileList(getFilePage('descargas/')),"file_list")
 //archivo viene con "nombre", "enlace", "ext" extension
 function FileCard(archivo){
 console.log("card")
+
+
 return( 
 	`
 	<article class="material__art">
-                    <img class="material__img" src="" alt="audio-img">
+                    <img class="material__img" src="./img/icon/descargas/icono__${archivo.ext}.png" alt="audio-img">
                     <div class="material__art--div">
                         <h3 class="material__name title">${archivo.nombre}</h3>
                         <p class="material__description text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus porro officiis sed fugiat eum facere, at a?</p>
@@ -78,10 +80,11 @@ let listaDeArchivos = []
 		listaDeArchivos.push( {
 						"enlace":listaDeEnlaces[i],
 						"nombre":rem.FileName,
-						"ext"   :rem.ext,
+						"ext"   :rem.ext.substring(0,3),
 						"html"  :listaDeEnlaces[i].outerHTML,
 						}
 					)
+					console.log(rem.ext.substring(0,3))
 	}
 return listaDeArchivos
 }
