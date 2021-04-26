@@ -280,11 +280,9 @@ body {
 }
 
 .know__img {
-    width: 30vw;
-}
-
-.know__img--two {
     width: 40vw;
+    position: relative;
+    z-index: 10;
 }
 
 .know__title--us {
@@ -326,9 +324,25 @@ body {
 }
 
 .team__us--text {
-    font-size: 3vh;
-    width: 10vw;
+    font-size: 2em;
+    width: 200px;
+    text-align: center;
+    align-self: center;
+    margin: auto;
 }
+
+.vector {
+    width: 40vw;
+    position: absolute;
+    top: 30vh;
+}
+
+.vector__img {
+    width: 40vw;
+    position: absolute;
+    top: 0;
+}
+
 
 
 /* CURSOS */
@@ -656,6 +670,9 @@ body {
         top: 14vh;
         right: 0;
     }
+
+    /* US */
+
     
 }
 
@@ -712,11 +729,25 @@ body {
     .button {
         width: 30vw;
     }
-    
+
+    /* US */
+    .know__img {
+        width: 40vw;
+        position: relative;
+        z-index: 10;
+    }
+
+    .know__title--us {
+        font-size: 2vmax;
+    }
+
+    .know__text, .know__li, .team__us--text {
+        font-size: 1.5vmax;
+    }
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
     .home__nav {
         display: none;
     }
@@ -819,6 +850,66 @@ body {
     .footer__img {
         width: 3vw;
     }
+
+    /* US */
+
+    .know__title {
+        font-size: 3.5vh;
+    }
+
+    .know__us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    .know__title--us {
+        font-size: 4vw;
+        margin-bottom: 3em;
+
+    }
+
+    .know__text, .know__li, .team__us--text {
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .know__li {
+        list-style-position: inside;
+    }
+
+    .know__v {
+        position: absolute;
+        top: 25vh;
+        right: 5vw;
+    }
+
+    .what__title {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .team__img {
+        width: 15vw;
+    }
+
+    .what__img {
+        position: absolute;
+        top: 65vh;
+        left: 15vw;
+    }
+
+    .how__img {
+        position: absolute;
+        top: 97vh;
+        right: 0;
+    }
+
+    .team__title {
+        font-size: 5vw;
+    }
 }
 
 
@@ -891,6 +982,15 @@ body {
         width: 3vw;
     }
 
+    /* US */
+    .what__img {
+        top: 70vh;
+    }
+
+    .how__img {
+        top: 102vh;
+    }
+
 }
 
 
@@ -913,6 +1013,20 @@ body {
     
     .footer__img {
         width: 3.5vw;
+    }
+
+    /* US */
+
+    .know__text, .know__li, .team__us--text {
+        font-size: 1.8vh;
+    }
+
+    .what__img {
+        top: 65vh;
+    }
+
+    .how__img {
+        top: 98vh;
     }
 }
 
@@ -992,6 +1106,16 @@ body {
     
     .footer__img {
         width: 4vw;
+    }
+
+    /* US */
+    .know__title, .curses__title, .material__title {
+        color: #D1D1D1;
+        margin: 4vh 0 5vh 0;
+    }
+
+    .know__v {
+        top: 25vh;
     }
 }
 
