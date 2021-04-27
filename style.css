@@ -907,6 +907,10 @@ body {
     .info__cell, .info__mail {
         width: 35vh;
     }
+
+    .learn__main {
+        height: 100%;
+    }
 }
 
 @media (max-width: 485px) {
@@ -926,11 +930,13 @@ body {
     /* INDEX */
     .learn__main {
         align-items: flex-start;
-        height: 120vh;
+        height: auto;
         margin-top: 10vh;
-    }
-    .info {
-        top: -4vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 400px);
+        margin: 80px;
+        height: 230vw;
     }
 
     .learn__text {
