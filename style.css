@@ -293,6 +293,10 @@ body {
     font-size: 1.5vw;
 }
 
+.know__us--mobile {
+    display: none;
+}
+
 .team, .team__gugo {
     display: flex;
     flex-direction: column;
@@ -331,17 +335,6 @@ body {
     margin: auto;
 }
 
-.vector {
-    width: 40vw;
-    position: absolute;
-    top: 30vh;
-}
-
-.vector__img {
-    width: 40vw;
-    position: absolute;
-    top: 0;
-}
 
 
 
@@ -737,10 +730,6 @@ body {
         z-index: 10;
     }
 
-    .know__title--us {
-        font-size: 2vmax;
-    }
-
     .know__text, .know__li, .team__us--text {
         font-size: 1.5vmax;
     }
@@ -853,62 +842,75 @@ body {
 
     /* US */
 
-    .know__title {
-        font-size: 3.5vh;
+    .know__us {
+        display: none;
     }
 
-    .know__us {
-        display: flex;
-        flex-direction: column;
+    .know__us--mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, .5fr);
         justify-content: center;
-        align-items: center;
         margin-bottom: 10vh;
     }
 
-    .know__title--us {
-        font-size: 4vw;
-        margin-bottom: 3em;
-
+    .know__img--mobile {
+        width: 40vw;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
-    .know__text, .know__li, .team__us--text {
+
+    .know__text--mobile {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-size: 2.3vw;
         text-align: center;
-        font-size: 2vh;
     }
 
-    .know__li {
+    .know__title--mobile, .what__title--mobile, .who__title--mobile {
+        align-self: center;
+        font-size: 3.5vw;
+    }
+
+
+    .what__img--mobile {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    
+    .know__first--mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, .1fr);
+        margin-bottom: 10vh;
+    }
+    
+    .who__text--mobile {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .know__li--mobile {
+        text-align: center;
         list-style-position: inside;
+        font-size: 2.3vw;
     }
 
-    .know__v {
-        position: absolute;
-        top: 25vh;
-        right: 5vw;
-    }
-
-    .what__title {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .team__img {
-        width: 15vw;
-    }
-
-    .what__img {
-        position: absolute;
-        top: 65vh;
-        left: 15vw;
-    }
-
-    .how__img {
-        position: absolute;
-        top: 97vh;
-        right: 0;
-    }
-
-    .team__title {
-        font-size: 5vw;
+    .know__ul--mobile {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 }
 
@@ -983,12 +985,23 @@ body {
     }
 
     /* US */
-    .what__img {
-        top: 70vh;
+
+    .team__us--text {
+        font-size: 2.4vw;
     }
 
-    .how__img {
-        top: 102vh;
+    .team__img {
+        width: 14vw;
+    }
+
+    .know__text--mobile {
+        font-size: 2.8vw;
+    }
+
+    .know__li--mobile {
+        text-align: center;
+        list-style-position: inside;
+        font-size: 2.8vw;
     }
 
 }
@@ -1015,18 +1028,37 @@ body {
         width: 3.5vw;
     }
 
+
     /* US */
-
-    .know__text, .know__li, .team__us--text {
-        font-size: 1.8vh;
+    .know__title--mobile, .what__title--mobile, .who__title--mobile {
+        align-self: center;
+        font-size: 2.3vh;
     }
 
-    .what__img {
-        top: 65vh;
+    .team {
+        margin-bottom: 5vh;
     }
 
-    .how__img {
-        top: 98vh;
+    .team__title {
+        font-size: 3vh;
+    }
+    
+    .team__img {
+        width: 10vh;
+    }
+    
+    
+    .team__us--title {
+        font-size: 2.4vh;
+
+    }
+    
+    .team__us--text {
+        font-size: 2vh;
+    }
+
+    .know__us--mobile {
+        margin-bottom: 5vh;
     }
 }
 
@@ -1112,10 +1144,12 @@ body {
     .know__title, .curses__title, .material__title {
         color: #D1D1D1;
         margin: 4vh 0 5vh 0;
+        font-size: 4vh;
     }
+    
 
-    .know__v {
-        top: 25vh;
+    .know__v--mobile, .what__img--mobile, .how__img--mobile {
+        width: 50vw;
     }
 }
 
