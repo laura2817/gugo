@@ -790,7 +790,19 @@ body {
         width: 3vw;
     }
 
+    .learn {
+        margin: 20px auto;
+    }
+
+    .learn__text {
+        margin-left: 12vw;
+    }
+
+    .learn__img--second {
+        width: 70vw;
+    }
     /* US */
+
 
     .team__us--text {
         font-size: 2.4vw;
@@ -893,7 +905,7 @@ body {
     }
 
     .info__cell, .info__mail {
-        width: 48vh;
+        width: 35vh;
     }
 }
 
@@ -915,22 +927,24 @@ body {
     .learn__main {
         align-items: flex-start;
         height: 120vh;
+        margin-top: 10vh;
     }
     .info {
         top: -4vh;
     }
 
     .learn__text {
+        top: 5vw;
         margin-left: 15vw;
     }
 
     .info__input {
         height: 7vw;
-        width: 30vw;
+        width: 25vw;
     }
 
     .info__cell, .info__mail {
-        width: 67vw;
+        width: 60vw;
     }
 
     .button {
@@ -1032,6 +1046,12 @@ body {
 
     .info {
         top: -10px;
+    }
+}
+
+@media (max-width: 270px) {
+    .info {
+        top: -10vh;
     }
 }
 
