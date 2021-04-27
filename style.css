@@ -589,7 +589,7 @@ body {
 
     /* US */
     .know__img {
-        width: 40vh;
+        width: 60vh;
         position: relative;
         z-index: 10;
     }
@@ -850,6 +850,14 @@ body {
     
     .team__us--text {
         font-size: 2vh;
+    }
+
+    .what__title--mobile, .who__title--mobile, .know__title--mobile {
+        font-size: 3vw;
+    }
+
+    .know__img--mobile, .what__img--mobile {
+        width: 50vw;
     }
 
     .know__us--mobile {
