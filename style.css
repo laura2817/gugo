@@ -48,9 +48,10 @@ body {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 15px;
     box-shadow: 0 0 10px 1px #999999;
     width: 100%;
-    height: 15vmin;
+    height: auto;
 }
 
 .home__img {
@@ -71,7 +72,11 @@ body {
 .home__li a {
     text-decoration: none;
     font-weight: 600;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
+}
+
+.button__nav {
+    display: none;
 }
 
 
@@ -94,7 +99,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    height: auto;
     background-color: rgb(0, 68, 133);
     color: rgb(210, 210, 210);
     margin-top: auto;
@@ -120,10 +125,11 @@ body {
 
 .learn__main {
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    height: 80em;
+    height: auto;
 }
 
 .learn {
@@ -339,10 +345,10 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100em;
+    height: auto;
 }
 
-.curses__title {
+.curses__title, .blog__title, .material__title  {
     align-self: flex-start;
     justify-self: center;
     margin: 2vw 5vw;
@@ -461,17 +467,13 @@ body {
 
 .material {
     width: 100vw;
-    height: 100em;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.material__title { 
-    align-self: flex-start;
-    margin: 4vw;
-}
 
 
 .material__content {
@@ -540,36 +542,38 @@ body {
 
 /* BLOG */
 
-.blog {
-    height: 80em;
+.blog__section {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center;
+    align-items: center; 
+    height: auto;
+}
+
+.blog {
+    height: auto;
 }
 
 .blog__items {
-    width: 60%;
+    width: 60vw;
     display: grid;
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 3px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     border-radius: 15px;
-    border: 1px solid #000;
+    box-shadow: 0 0 10px 0 #999999;
+    margin: 6vw;
 }
 
-.blog__title {
-    margin: 4vw;
-    align-self: flex-start;
-}
 
 .blog__title--two {
     grid-column-start: 2;
     grid-column-end: 3;
-    font-size: 2vw;
+    font-size: 3vw;
     color: rgb(196, 26, 45);
 }
 
@@ -578,7 +582,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-size: 1vw;
+    font-size: 1.7vw;
 }
 
 .blog__content--img {
@@ -587,6 +591,7 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
+    width: 100%;
     height: 100%;
 }
 
@@ -597,9 +602,10 @@ body {
     grid-row-end: 4;
     background-color: rgb(237, 209, 110);
     color: #fff;
-    width: 50px;
+    width: 45%;
     text-align: center;
     border-radius: 15px;
+    font-size: 2vw;
 }
 
 .blog__name--span {
@@ -607,7 +613,9 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    justify-self: center;
+    justify-self: flex-end;
+    width: 50%;
+    font-size: 1.5vw;
 }
 
 
@@ -617,9 +625,6 @@ body {
 
 
 @media (max-width: 2500px) {
-    .learn__main {
-        height: 70em;
-    }
 
     .info__img {
         left: .5em;
@@ -631,9 +636,6 @@ body {
     }
 
     /* MATERIAL */
-    .material {
-        height: 75em;
-    }
 
     .material__download, .material__level {
         width: 150px;
@@ -655,37 +657,14 @@ body {
     
     /* Index */
 
-    .learn__main {
-        height: 50em;
-    }
-
-
     .info__img {
         width: 50vw;
         left: 10px;
     }
-    /* US */
 
-    .curses {
-        height: 64em;
-    }
-
-    /* MATERIAL */
-    .material {
-        height: 65em;
-    }
 
 }
 
-@media (max-width: 1800px) {
-    .learn__main {
-        height: 50em;
-    }
-
-    .curses {
-        height: 60em;
-    }
-}
 
 @media (max-width: 1500px) {
 
@@ -693,15 +672,8 @@ body {
         font-size: 1.5vw;
     }
 
-    .footer {
-        height: 70px;
-    }
 
     /* INDEX */
-
-    .learn__main {
-        height: 35em;
-    }
 
     .learn__img--second {
         width: 37vw;
@@ -729,16 +701,13 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 45em;
-    }
     .curses__content {
         grid-template-columns: 60px .9fr;
     }
 
     .curses__vector, .curses__vector--two {
         position: fixed;
-        height: 70em;
+        height: 40em;
         left: 0;
         top: 10em;
         overflow: hidden;
@@ -762,10 +731,6 @@ body {
 
     /* MATERIAL */
 
-    .material {
-        height: 60em;
-    }
-
     .material__download, .material__level {
         width: 110px;
         font-size: 1vw;
@@ -775,23 +740,34 @@ body {
 
 
 @media (max-width: 1030px) {
-    .home__nav {
+    
+    .home__ul {
         display: none;
+        flex-direction: column;
+        height: 0;
     }
 
     .home__img {
-        width: 7vw;
+        width: 70px;
         margin-left: 5vw;
+    }
+
+    .button__nav {
+        display: block;
+        justify-self: flex-end;
+    }
+
+    .img__button {
+        width: 70px;
     }
 
     /* INDEX */
 
     .learn__main {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 700px 500px;
-        margin: 80px;
-        height: 80em;
+        grid-template-columns: repeat(2, .5fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 40px;
         justify-content: center;
         align-items: center;
     }
@@ -824,7 +800,8 @@ body {
     .info {
         width: 70vw;
         margin: 10px 0;
-        height: 700px;
+        padding: 5vw;
+        height: auto;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -835,6 +812,8 @@ body {
     .info__form {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        grid-gap: 25px;
+        width: 80%;
     }
 
     
@@ -843,7 +822,7 @@ body {
     }
     
     .info__input {
-        width: 28vw;
+        width: 100%;
         height: 70px;
         font-size: 2vw;
     }
@@ -857,7 +836,7 @@ body {
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        width: 59vw;
+        width: 100%;
     }
 
     .info__cell {
@@ -865,7 +844,7 @@ body {
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
-        width: 59vw;
+        width: 100%;
     }
 
 
@@ -951,9 +930,6 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 70em;
-    }
 
     .curses__how {
         grid-template-columns: 0.9fr;
@@ -1002,9 +978,6 @@ body {
 
     /* MATERIAL */
 
-    .material {
-        height: 55em;
-    }
 
     .material__content {
         width: 80%;
@@ -1039,13 +1012,12 @@ body {
 
 @media (max-width: 800px) {
     
-    .home__nav {
-        display: none;
-    }
-
-
     .learn {
         margin: 20px auto;
+    }
+
+    .learn__main {
+        grid-gap: 40px;
     }
 
     .learn__title {
@@ -1067,9 +1039,6 @@ body {
         height: 50px;
     }
 
-    .info__mail, .info__cell {
-        width: 63vw;
-    }
 
 
     /* US */
@@ -1094,9 +1063,6 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 80em;
-    }
 
     .curses__title { 
         font-size: 7vw;
@@ -1118,9 +1084,6 @@ body {
     }
 
     /* MATERIAL */
-    .material {
-        height: 45em;
-    }
 
     .content__title {
         font-size: 5vw;
@@ -1141,7 +1104,8 @@ body {
 @media (max-width: 645px) {
     .learn__main {
         margin: 20px;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
     
     .learn {
@@ -1153,22 +1117,15 @@ body {
     }
     
     .learn__img--second {
-        width: 70vw;
+        width: 90vw;
         top: 60px;
-        left: -40px;
+        left: -80px;
     }
     
     .learn__text {
         margin-left: 40px;
     }
 
-    .info {
-        top: -10em;
-    }
-
-    .info__mail, .info__cell {
-        width: 64vw;
-    }
 
     .info__input {
         font-size: 1em;
@@ -1176,10 +1133,6 @@ body {
     }
 
     /* CURSES */
-
-    .curses {
-        height: 85em;
-    }
 
     .curses__title { 
         position: relative;
@@ -1214,10 +1167,6 @@ body {
         width: 3.5vw;
     }
 
-    .learn__main {
-        height: 70em;
-    }
-
     .learn {
         top: 50px;
     }
@@ -1234,11 +1183,6 @@ body {
 
     .info {
         height: 500px;
-        top: -210px;
-    }
-
-    .info__mail, .info__cell {
-        width: 57vw;
     }
 
     .info__input {
@@ -1288,10 +1232,6 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 75em;
-    }
-
     .curses__title {
         top: 15px;
     }
@@ -1306,14 +1246,6 @@ body {
         height: 40px;
     }
     
-    .info__cell, .info__mail {
-        width: 64vw;
-    }
-    
-    .learn__main {
-        height: 50em;
-        grid-template-rows: 600px;
-    }
 
     .learn__text {
         font-size: 20px;
@@ -1333,9 +1265,6 @@ body {
 
 @media (max-width: 485px) {
     
-    .home__img {
-        width: 8vw;
-    }
 
     .footer__korean, .footer__mail {
         font-size: 3.2vw;
@@ -1348,7 +1277,8 @@ body {
     /* INDEX */
 
     .learn__main {
-        height: 50em;
+        grid-template-rows: 1.2fr 1fr;
+        grid-gap: 0;
     }
 
     .learn__text {
@@ -1359,11 +1289,11 @@ body {
 
     .info__input {
         height: 30px;
-        width: 27vw;
     }
 
     .info {
         height: 20em;
+        justify-self: center;
     }
 
     .info__title {
@@ -1374,9 +1304,6 @@ body {
         grid-gap: 25px;
     }
 
-    .info__cell, .info__mail {
-        width: 60vw;
-    }
 
     .button {
         width: 50vw;
@@ -1395,9 +1322,6 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 95em;
-    }
 
     .curses__title { 
         font-size: 10vw;
@@ -1424,9 +1348,6 @@ body {
     }
 
     /* MATERIAL */ 
-    .material {
-        height: 35em;
-    }
 
     .material__title {
         margin-left: 8vw;
@@ -1438,19 +1359,10 @@ body {
     }
 }
 
-@media (max-width: 450px) {
-    .curses {
-        height: 87em;
-    }
-}
 
 
 @media (max-width: 395px) {
-    .home__img {
-        width: 10vw;
-    }
     
-
     .footer__korean, .footer__mail {
         font-size: 3.2vw;
     }
@@ -1469,17 +1381,15 @@ body {
     }
 
     .learn__main {
-        height: 45em;
-        grid-template-rows: 340px;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .learn__img--second {
-        left: -49px;
-    }
 
     .learn__text {
+        width: 100px;
         top: 70px;
         font-size: 15px;
+        left: 90px;
     }
 
     .learn__title {
@@ -1501,37 +1411,18 @@ body {
 
     .info__input {
         height: 30px;
-        width: 25vw;
         font-size: 3VW;
     }
 
-    .info__cell, .info__mail {
-        width: 60vw;
-    }
 
     .button {
         width: 45vw;
     }
 
-    /* CURSES */
-    .curses {
-        height: 80em;
-    }
 }
 
-@media (max-width: 345px) {
-    .curses {
-        height: 70em;
-    }
-}
 
 @media (max-width: 310px) {
-
-    .home__img {
-        width: 15vw;
-    }
-
-
     .footer__korean, .footer__mail {
         font-size: 5vw;
     }
@@ -1540,16 +1431,15 @@ body {
         width: 5vw;
     }
 
-
-    .learn__main {
-        grid-template-rows: 300px 400px;
-        height: 45em;
-    }
-
     .learn__text {
         top: 70px;
         font-size: 14px;
         width: 100px;
+        left: 50px;
+    }
+
+    .learn__img--second {
+        left: -80px;
     }
 
     .learn__title {
@@ -1562,9 +1452,6 @@ body {
     }
 
     /* CURSES */
-    .curses {
-        height: 65em;
-    }
 
     /* MATERIAL */
     .material__download, .material__level {
@@ -1580,10 +1467,9 @@ body {
         top: 40px;
     }
 
-    .learn__text {
-        font-size: 10px;
+    .learn__img--second {
+        width: 250px;
     }
-
 
     .info {
         top: -10px;
@@ -1597,11 +1483,6 @@ body {
     }
 }
 
-@media (max-width: 270px) {
-    .curses {
-        height: 60em;
-    }
-}
 
 
 
