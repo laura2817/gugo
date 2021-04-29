@@ -5,6 +5,7 @@ lista(getServerFileList(getFilePage('descargas/')),"file_list")
 
 
 
+
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 function FileCard(archivo){
@@ -12,20 +13,14 @@ console.log("card")
 
 
 return( 
-	`
-	<article class="material__art">
+`
+				<article class="material__art">
                     <img class="material__img" src="./img/icon/descargas/icono__${archivo.ext}.png" alt="audio-img">
-                    <div class="material__art--div">
-                        <h3 class="material__name title">${archivo.nombre}</h3>
-                        <p class="material__description text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus porro officiis sed fugiat eum facere, at a?</p>
-                    </div>
-                    <div class="material__art--level">
-                        <button class="material__level text">Nivel 1</button>
-                        <button class="material__download text">Descargar ${archivo.ext}</button>
-                    </div>
+                    <h3 class="material__name title">${archivo.nombre}</h3>
+                    <button class="material__level text">Nivel 1</button>
+                    <button class="material__download text">Descargar ${archivo.ext}</button>
                 </article>
-	
-	`
+`
 	)
 }
 
@@ -88,4 +83,3 @@ let listaDeArchivos = []
 	}
 return listaDeArchivos
 }
-
