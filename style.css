@@ -754,11 +754,13 @@ body {
 
     .button__nav {
         display: block;
+		margin-right: 5vw;
         justify-self: flex-end;
     }
 
     .img__button {
         width: 70px;
+		
     }
 
     /* INDEX */
