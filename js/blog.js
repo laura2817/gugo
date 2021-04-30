@@ -3,7 +3,7 @@
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 
-setTimeout(function(){ lista(posteos,"posteos"); }, 5000);
+setTimeout(function(){ lista(posteos,"posteos"); }, 1200);
 
 
 function postCard(post){
@@ -22,7 +22,7 @@ function postCard(post){
 }
 
 //Genera la lista de archivos en Html
-function lista(myList, idDestino = "file_list"){
+function lista(myList, idDestino = "posteos"){
 	destino = document.getElementById(idDestino)
 	destino.innerHTML = ""
 	for(let i=0;i<myList.length;i++){
