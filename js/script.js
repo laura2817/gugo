@@ -221,10 +221,13 @@ function checkUser(json, us, cl){
 
 function toggleNav(e){
   e.preventDefault()
-  let nav =  document.getElementsByClassName("home__nav")[0]
-    nav.style.display = nav.style.display === "none" ? "block" : "none";
-}
 
+  let nav =  document.getElementsByClassName("home__nav")[0]
+  nav.style.display = nav.style.display === "none" ? "block" : "none";
+
+  document.getElementsByClassName("img__button")[0].src = nav.style.display === "none" ? "img/button.png" : "img/x.png";
+
+}
 
 function showOn(){
   let nav =  document.getElementsByClassName("home__nav")[0]

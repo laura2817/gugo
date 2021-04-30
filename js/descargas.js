@@ -1,37 +1,37 @@
 //Genera lista de descargables
 //Lee todos los archivos de la carpeta y genera las cards de descargas.
-
-lista(getServerFileList(getFilePage('descargas/')),"file_list")
-
-
+//Carga pasado 1 segundo, para mas fluidez.
+let valores = getServerFileList(getFilePage('descargas/'))
+setTimeout(function(){ lista(valores,"file_list"); }, 1000);
 
 
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 function FileCard(archivo){
-console.log("card")
-
-
-return( 
-`
-				<article class="material__art">
-                    <img class="material__img" src="./img/icon/descargas/icono__${archivo.ext}.png" alt="audio-img">
-                    <h3 class="material__name title">${archivo.nombre}</h3>
-                    <button class="material__level text">Nivel 1</button>
-                    <button class="material__download text">Descargar ${archivo.ext}</button>
-                </article>
-`
+	return( 
+		`
+		<article class="material__art">
+			<img class="material__img" src="./img/icon/descargas/icono__${archivo.ext}.png" alt="audio-img">
+			<h3 class="material__name title">${archivo.nombre}</h3>
+			<button class="material__level text">Nivel 1</button>
+			<button href=${archivo.enlace} onclick="descargar(this)" 
+			class="material__download text">Descargar ${archivo.ext}</button>
+		</article>
+		`
 	)
 }
 
+
+function descargar(e){
+	e.preventDefault()
+	window.location.href=e.getAttribute("href")
+}
 
 //Separa el nombre del archivo y su extension
 function RemoveExtra(texto){
 	let temp = texto.split(".")
 	let salida = ""
-
 	for (z = 0; z < temp.length-1; z++){salida += temp[z]}
-	
 	return {"FileName":salida,"ext": temp[temp.length-1]}
 }
 
@@ -40,19 +40,17 @@ function RemoveExtra(texto){
 function lista(myList, idDestino = "file_list"){
 	destino = document.getElementById(idDestino)
 	destino.innerHTML=""
-	for(var i=0;i<myList.length;i++){
+	for(let i=0;i<myList.length;i++){
 		 destino.innerHTML += FileCard(myList[i])
     }
 }
 
 //Recupera la pagina del server que genera la lista de archivos
 function getFilePage(destino){
-
 	let ur = window.location.href.split("/")
 	let url = window.location.href.replace(ur[ur.length-1], "") + destino
-	
-	console.log(url)
-	var req = new XMLHttpRequest();  
+
+	let req = new XMLHttpRequest();  
 	req.open('GET', url, false);   
 	req.send(null);  
 
@@ -79,7 +77,6 @@ let listaDeArchivos = []
 						"html"  :listaDeEnlaces[i].outerHTML,
 						}
 					)
-					console.log(rem.ext.substring(0,3))
 	}
 return listaDeArchivos
 }

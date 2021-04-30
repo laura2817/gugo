@@ -534,7 +534,8 @@ body {
 
 .material__img {
     margin: 70px 20px;
-	width: 80%;
+	max-width: 80%;
+	padding: 2px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -780,7 +781,7 @@ body {
     }
 
     .img__button {
-        width: 60px;
+        width: 32px;
 		
     }
 
