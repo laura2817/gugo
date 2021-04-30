@@ -1,14 +1,10 @@
 
 //la variable con los compos esta en posteos.json y se llama posteos
-
-
-
-
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 
+setTimeout(function(){ lista(posteos,"posteos"); }, 1000);
 
-lista(posteos,"posteos")
 
 function postCard(post){
 	return( 
