@@ -81,6 +81,7 @@ body {
 
 
 
+
 /* letras y fuentes */
 
 .title {
@@ -90,6 +91,11 @@ body {
 
 .text, .home__li a {
     font-family: var(--main-letter);
+}
+
+/*home__li*/
+.activo { 
+	border-bottom: 4px solid rgba(0, 0, 0, 0.5);
 }
 
 /* footer */

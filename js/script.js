@@ -131,7 +131,16 @@ const usuarios = {
 existe_sesion();
 showOn();
 navBar();
+enlaceActivo()
 
+function enlaceActivo(){
+  let enlaces = [].slice.call(document.getElementsByClassName("home__ul")[0].getElementsByTagName("a"))
+
+  enlaces.forEach(enlace => enlace.href.includes("#") && enlace.id !="inicio_de_sesion" ? 
+          enlace.classList.add("activo") : enlace.classList.remove("activo")
+);
+
+}
 
 function navBar(){
   document.getElementById("burger").addEventListener("click",toggleNav, false)
