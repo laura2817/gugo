@@ -144,7 +144,7 @@ function auth(e){
 	sesion()
 }
 
-function login(){
+function showLogin(){
 if (!existe_sesion()){
 	let div = document.createElement('div');
 		div.id = 'modal_login'
@@ -166,7 +166,6 @@ function hide_login(e){
 	let div_login = document.getElementById("modal_login");
 
 	if (div_login && (e.keyCode === 27 || e.target === this || e === "login")){
-
  		 document.removeEventListener("click"  , auth       , false)
  		 document.removeEventListener('keydown', hide_login , false)
 		div_login.removeEventListener('click'  , hide_login , false)
@@ -194,7 +193,7 @@ function sesion(){
 
 function existe_sesion(){
 let sesion_ = document.getElementById("inicio_de_sesion")
-sesion_.addEventListener('click', login, false)
+sesion_.addEventListener('click', showLogin, false)
 
 	if(sessionStorage.getItem('sesion')){
 		sesion_.innerHTML = "Cerrar sesión"
@@ -221,12 +220,9 @@ function checkUser(json, us, cl){
 
 function toggleNav(e){
   e.preventDefault()
-
   let nav =  document.getElementsByClassName("home__nav")[0]
   nav.style.display = nav.style.display === "none" ? "block" : "none";
-
   document.getElementsByClassName("img__button")[0].src = nav.style.display === "none" ? "img/button.png" : "img/x.png";
-
 }
 
 function showOn(){

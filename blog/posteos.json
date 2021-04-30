@@ -1,0 +1,17 @@
+const posteos = [
+	{
+	"titulo":"Nada",
+	"texto":"lorem",
+    "year":"2021",
+	"alumno":"Pepe",
+    "imagen":"imagen1.jpg",
+	},
+	{
+	"titulo":"Nada2",
+	"texto":"lorem2",
+    "year":"2022",
+	"alumno":"Pepe2",
+    "imagen":"imagen2.jpg",
+	}
+]
+                
