@@ -127,7 +127,16 @@ const usuarios = {
 	user: "pedro" , pass : "123" , level: "NIVEL X"
 }
 
-existe_sesion()
+
+existe_sesion();
+showOn();
+navBar();
+
+
+function navBar(){
+  document.getElementById("burger").addEventListener("click",toggleNav, false)
+  window.addEventListener("resize", showOn);
+}
 
 function auth(e){
 	e.preventDefault()
@@ -208,4 +217,21 @@ function checkUser(json, us, cl){
 	//aca se deberia hacer una llamada a la Api de usuarios
 	return (json.user == us && json.pass == cl );
 }
+
+
+function toggleNav(e){
+  e.preventDefault()
+  let nav =  document.getElementsByClassName("home__nav")[0]
+    nav.style.display = nav.style.display === "none" ? "block" : "none";
+}
+
+
+function showOn(){
+  let nav =  document.getElementsByClassName("home__nav")[0]
+    nav.style.display = window.matchMedia("(max-width: 1030px)").matches ? "none" : "block";
+}
+
+
+    
+    
 
