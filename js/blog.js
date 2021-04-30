@@ -3,7 +3,7 @@
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 
-setTimeout(function(){ lista(posteos,"posteos"); }, 1000);
+setTimeout(function(){ lista(posteos,"posteos"); }, 5000);
 
 
 function postCard(post){
