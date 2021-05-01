@@ -83,10 +83,6 @@ body {
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2314289bb882f2847189729a375b8d64c548158e
 /* letras y fuentes */
 
 .title {
@@ -904,7 +900,7 @@ body {
 
     .info {
         width: 80%;
-        padding: 5vw;
+        padding: 100px 0;
         height: 80%;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -918,6 +914,7 @@ body {
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 25px;
         width: 80%;
+        height: auto;
     }
 
     
