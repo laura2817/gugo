@@ -131,7 +131,16 @@ const usuarios = {
 existe_sesion();
 showOn();
 navBar();
+enlaceActivo()
 
+function enlaceActivo(){
+  let enlaces = [].slice.call(document.getElementsByClassName("home__ul")[0].getElementsByTagName("a"))
+
+  enlaces.forEach(enlace => enlace.href.includes("#") && enlace.id !="inicio_de_sesion" ? 
+          enlace.classList.add("activo") : enlace.classList.remove("activo")
+);
+
+}
 
 function navBar(){
   document.getElementById("burger").addEventListener("click",toggleNav, false)
@@ -220,9 +229,11 @@ function checkUser(json, us, cl){
 
 function toggleNav(e){
   e.preventDefault()
-  let nav =  document.getElementsByClassName("home__nav")[0]
-  nav.style.display = nav.style.display === "none" ? "block" : "none";
-  document.getElementsByClassName("img__button")[0].src = nav.style.display === "none" ? "img/button.png" : "img/x.png";
+  
+  let nav          = document.getElementsByClassName("home__nav")[0]
+  let imagen_boton = document.getElementsByClassName("img__button")[0]
+  
+  imagen_boton.src = ( nav.style.display = nav.style.display === "none" ? "block" : "none" ) === "none" ? "img/button.png" : "img/x.png"
 }
 
 function showOn(){
