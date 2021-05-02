@@ -96,7 +96,7 @@ body {
 
 /*home__li*/
 .activo { 
-	border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 4px solid rgb(0, 68, 133);
 }
 
 /* footer */
@@ -146,7 +146,7 @@ body {
 .learn {
     height: 100%;
     display: grid; 
-    grid-template-columns: 0.5fr 0.8fr;
+    grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     justify-content: center;
     align-items: center;
@@ -157,6 +157,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     justify-self: center;
+    align-self: flex-end;
     position: relative;
     z-index: 20;
 }
@@ -166,6 +167,7 @@ body {
 }
 
 .learn__text {
+    width: 80%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -247,7 +249,7 @@ body {
 
 /* Primera sección */
 
-.know__main, .curses {
+.know, .blog, .curses, .material__main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -256,18 +258,16 @@ body {
     align-items: center;
 }
 
-.know {
-    margin: 1vh 7vw;
-}
-
-
-.know__title, .curses__title, .material__title, .blog__title {
+.general__title {
+    width: 100%;
     color: #D1D1D1;
-    font-size: 4vw;
-    margin: 4vh 0 10vw 0;
+    font-size: 380%;
+    margin: 4vw 0;
+    position: relative;
+    z-index: 30;
 }
 
-.know__span, .curses__span, .material__span, .blog__span {
+.general__span {
     color: rgb(196, 26, 45);
     font-family: var(--korean-letter);
     font-weight: 600;
@@ -357,14 +357,6 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-}
-
-.curses__title, .blog__title, .material__title  {
-    align-self: flex-start;
-    justify-self: center;
-    margin: 2vw 5vw;
-    position: relative;
-    z-index: 30;
 }
 
 .curses__info {
@@ -803,10 +795,11 @@ body {
 
     .home__li a {
         font-size: 3vw;
+        line-height: 200%;
     }
 
     .home__img {
-        width: 70px;
+        width: 10%;
         margin-left: 5vw;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -823,7 +816,7 @@ body {
     }
 
     .img__button {
-        width: 32px;
+        width: 100%;
 		
     }
 
@@ -972,7 +965,7 @@ body {
     }
 
     .know__img--mobile {
-        width: 40vw;
+        width: 50vw;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -985,13 +978,13 @@ body {
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 2;
-        font-size: 2.3vw;
+        font-size: 3vw;
         text-align: center;
     }
 
     .know__title--mobile, .what__title--mobile, .who__title--mobile {
         align-self: center;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
 
 
@@ -1020,7 +1013,7 @@ body {
     .know__li--mobile {
         text-align: center;
         list-style-position: inside;
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
 
     .know__ul--mobile {
@@ -1143,8 +1136,6 @@ body {
 @media (max-width: 800px) {
     
     /* US */
-
-
     .team__us--text {
         font-size: 2.4vw;
     }
@@ -1173,12 +1164,6 @@ body {
 
     /* CURSES */
 
-    .curses__title { 
-        font-size: 7vw;
-        position: relative;
-        top: -5px;
-    }
-
     .curses__content--title {
         font-size: 5vw;
     }
@@ -1202,11 +1187,6 @@ body {
         font-size: 3vw;
     }
 
-    .material__title {
-        font-size: 7vw;
-    }
-
-
 }
 
 
@@ -1214,15 +1194,9 @@ body {
 
     .info__input {
         font-size: 1em;
-        height: 50px;
     }
 
     /* CURSES */
-
-    .curses__title { 
-        position: relative;
-        top: -10px;
-    }
 
     .curses__content--title {
         font-size: 6vw;
@@ -1305,9 +1279,6 @@ body {
     }
 
     /* CURSES */
-    .curses__title {
-        top: 15px;
-    }
 }
 
 @media (max-width: 550px) {
@@ -1330,11 +1301,6 @@ body {
         grid-column-start: 1;
         font-size: 30px;
         width: 10em;
-    }
-
-    /* CURSES */
-    .curses__title {
-        font-size: 10vw;
     }
 }
 
@@ -1369,11 +1335,6 @@ body {
     }
 
     /* US */
-    .know__title, .curses__title, .material__title {
-        color: #D1D1D1;
-        margin: 4vh 0 5vh 0;
-        font-size: 4vh;
-    }
     
 
     .know__v--mobile, .what__img--mobile, .how__img--mobile {
@@ -1381,14 +1342,6 @@ body {
     }
 
     /* CURSES */
-
-    .curses__title { 
-        font-size: 10vw;
-        position: relative;
-        top: 0;
-        left: 25px;
-    }
-
     .curses__content--title {
         font-size: 6vw;
     }
@@ -1407,10 +1360,6 @@ body {
     }
 
     /* MATERIAL */ 
-
-    .material__title {
-        margin-left: 8vw;
-    }
 
     .material__download, .material__level {
         width: 20vw;
