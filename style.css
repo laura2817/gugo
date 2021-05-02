@@ -73,6 +73,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.5vw;
+    color: #000;
 }
 
 .button__nav {
@@ -95,7 +96,11 @@ body {
 
 /*home__li*/
 .activo { 
+<<<<<<< HEAD
 	border-bottom: 4px solid rgba(0, 68, 133, 0.5);
+=======
+	border-bottom: 4px solid rgb(0, 68, 133);
+>>>>>>> bbc7ea703f317a71c177ec9353d03840f3336ee0
 }
 
 /* footer */
@@ -136,43 +141,45 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
+    background-image: url(img/ilustraciones\ gugo-011.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
 }
 
 .learn {
+    height: 100%;
     display: grid; 
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 8vw 9vw 10vw;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
 .learn__title {
     font-size: 3vw;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: flex-end;
     position: relative;
     z-index: 20;
-    margin-bottom: 0;
 }
 
-.learn__img--second {
-    width: 40vw;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    position: relative;
-    top: -120px;
+.learn__img, .vector, .learn__vector {
+    display: none;
 }
 
 .learn__text {
+    width: 80%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
+    align-self: start;
+    justify-self: self-start;
     font-size: 1.4vw;
     position: relative;
     z-index: 20;
-    margin-left: 10vw;
 }
 
 .info {
@@ -218,7 +225,7 @@ body {
     right: 0;
     width: 40vw;
     overflow: hidden;
-    height: 40vw;
+    height: 30vw;
 }
 
 .info__img {
@@ -246,8 +253,8 @@ body {
 
 /* Primera sección */
 
-.know__main, .curses {
-    width: 100%;
+.know__main, .blog, .curses__main, .material__main {
+    width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -255,18 +262,16 @@ body {
     align-items: center;
 }
 
-.know {
-    margin: 1vh 7vw;
-}
-
-
-.know__title, .curses__title, .material__title, .blog__title {
+.general__title {
     color: #D1D1D1;
-    font-size: 4vw;
-    margin: 4vh 0 10vh 0;
+    align-self: flex-start;
+    font-size: 5vw;
+    margin: 4vw 0 8vw 0;
+    position: relative;
+    z-index: 30;
 }
 
-.know__span, .curses__span, .material__span, .blog__span {
+.general__span {
     color: rgb(196, 26, 45);
     font-family: var(--korean-letter);
     font-weight: 600;
@@ -278,7 +283,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 15%;
 }
 
 .know__img, .know__img--two {
@@ -286,7 +291,7 @@ body {
 }
 
 .know__img {
-    width: 40vw;
+    width: 50vw;
     position: relative;
     z-index: 10;
 }
@@ -310,23 +315,30 @@ body {
     align-items: center;
 }
 
+.team {
+    margin-bottom: 10%;
+}
+
 .team__title {
     font-size: 5vh;
     text-align: center;
 }
 
 .team__img {
-    width: 20vh;
+    width: 8vw;
 }
 
-.team__us {
-    margin: 2vw;
-}
 
 .team__gugo {
     flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.team__us {
+    margin: 0 70px;
+    align-self: baseline;
 }
 
 .team__us--title {
@@ -347,19 +359,12 @@ body {
 /* CURSOS */
 
 .curses {
+    width: 100%;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: auto;
-}
-
-.curses__title, .blog__title, .material__title  {
-    align-self: flex-start;
-    justify-self: center;
-    margin: 2vw 5vw;
-    position: relative;
-    z-index: 30;
 }
 
 .curses__info {
@@ -472,7 +477,6 @@ body {
 }
 
 .material {
-    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -564,11 +568,11 @@ body {
 }
 
 .blog__items {
-    width: 80vw;
+    width: 60vw;
     display: grid;
-    grid-template-columns: .5fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-gap: 3px;
+    grid-template-columns: .4fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-gap: 15px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -597,8 +601,13 @@ body {
     background-color: rgb(210, 210, 210);
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+}
+
+.blog__img {
     width: 100%;
     height: 100%;
 }
@@ -610,7 +619,7 @@ body {
     grid-row-end: 4;
     background-color: rgb(237, 209, 110);
     color: #fff;
-    width: 45%;
+    width: 20%;
     text-align: center;
     border-radius: 15px;
     font-size: 2vw;
@@ -640,7 +649,11 @@ body {
 
     .learn__img--second {
         width: 36vw;
-        top: -80px;
+    }
+
+    /* US */
+    .team__us {
+        margin: 0 40px;
     }
 
     /* MATERIAL */
@@ -654,14 +667,6 @@ body {
 
 @media (max-width: 2000px) {
 
-    /* NAVBAR */
-    .home__li a {
-        font-size: 1.7vw;
-    }
-    
-    
-    /* footer */
-    
     
     /* Index */
 
@@ -670,7 +675,12 @@ body {
         left: 10px;
     }
 
+    /* US */
 
+    .team__us {
+        margin: 0 5px;
+    }
+    
 }
 
 
@@ -685,7 +695,6 @@ body {
 
     .learn__img--second {
         width: 37vw;
-        top: -50px;
     }
 
     .button {
@@ -699,13 +708,29 @@ body {
 
     /* US */
     .know__img {
-        width: 60vh;
         position: relative;
         z-index: 10;
     }
 
     .know__text, .know__li, .team__us--text {
         font-size: 1.5vmax;
+    }
+
+    .team__img {
+        width: 7vw;
+    }
+
+    .team__us {
+        margin: 0 1.5vw;
+    }
+
+    .team__us--title {
+        font-size: 1.5vw;
+    }
+
+    .team__us--text {
+        font-size: 1.3vw;
+        width: 130px;
     }
 
     /* CURSES */
@@ -746,6 +771,16 @@ body {
     
 }
 
+@media (max-width: 1151px) {
+    .team__us {
+        margin: 20px 5vw;
+    }
+
+    .team__img {
+        width: 10vw;
+    }
+}
+
 
 @media (max-width: 1030px) {
     .home {
@@ -767,10 +802,11 @@ body {
 
     .home__li a {
         font-size: 3vw;
+        line-height: 200%;
     }
 
     .home__img {
-        width: 70px;
+        width: 25%;
         margin-left: 5vw;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -787,7 +823,7 @@ body {
     }
 
     .img__button {
-        width: 32px;
+        width: 100%;
 		
     }
 
@@ -798,47 +834,80 @@ body {
         grid-row-end: 3;
     }
 
+    .general__title {
+        font-size: 7vw;
+    }
+
     /* INDEX */
 
     .learn__main {
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, .5fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;
         justify-content: center;
         align-items: center;
+        background-image: none;
     }
 
     .learn {
+        display: grid;
+        width: 100%;
+        align-items: center;
         margin: 60px 0;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        align-self: start;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr;
         position: relative;
-        top: 50px;
+        z-index: 20;
     }
 
-    .learn__img--second {
-        width: 70vw;
-        top: 30px;
-        left: 4vw;
+    .learn__img {
+        display: block;
+        width: 30vw;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+        align-self: center;
     }
 
     .learn__title {
         font-size: 5vw;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     .learn__text {
+        width: 95%;
         font-size: 3vw;
-        top: 50px;
-        left: 60px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .vector {
+        display: block;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        top: 40%;
+    }
+
+    .learn__vector {
+        display: block;
+        width: 120%;
+        position: relative;
+        top: 0;
+        left: -7em;
     }
 
     .info {
-        width: 70vw;
-        margin: 10px 0;
-        padding: 5vw;
-        height: auto;
+        width: 80%;
+        padding: 100px 0;
+        height: 80%;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -851,17 +920,19 @@ body {
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 25px;
         width: 80%;
+        height: auto;
     }
 
     
     .info__title {
         font-size: 3vw;
+        line-height: 40px;
     }
     
     .info__input {
         width: 100%;
         height: 70px;
-        font-size: 2vw;
+        font-size: 100%;
     }
     
     .info__content {
@@ -908,7 +979,7 @@ body {
     }
 
     .know__img--mobile {
-        width: 40vw;
+        width: 50vw;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -921,13 +992,13 @@ body {
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 2;
-        font-size: 2.3vw;
+        font-size: 3vw;
         text-align: center;
     }
 
     .know__title--mobile, .what__title--mobile, .who__title--mobile {
         align-self: center;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
 
 
@@ -956,7 +1027,7 @@ body {
     .know__li--mobile {
         text-align: center;
         list-style-position: inside;
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
 
     .know__ul--mobile {
@@ -1041,71 +1112,71 @@ body {
     }
 
     .material__name {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
+}
+
+@media (max-width: 866px) {
+    .team__gugo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .one {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .two {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .three {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 }
 
 
 @media (max-width: 800px) {
     
-    .learn {
-        margin: 20px auto;
-    }
-
-    .learn__main {
-        grid-gap: 40px;
-    }
-
-    .learn__title {
-        font-size: 40px;
-    }
-
-    .learn__text {
-        top: 80px;
-        margin-left: 70px;
-        font-size: 25px;
-    }
-
-    .learn__img--second {
-        width: 80vw;
-        left: -25px;
-    }
-
-    .info__input {
-        height: 50px;
-    }
-
-
-
     /* US */
-
-
     .team__us--text {
         font-size: 2.4vw;
     }
 
     .team__img {
-        width: 14vw;
+        width: 10vw;
+    }
+
+    .team__us {
+        margin: 15px 2vw;
+    }
+
+    .team {
+        width: 100%;
     }
 
     .know__text--mobile {
-        font-size: 2.8vw;
+        font-size: 4vw;
     }
 
     .know__li--mobile {
         text-align: center;
         list-style-position: inside;
-        font-size: 2.8vw;
+        font-size: 4vw;
     }
 
     /* CURSES */
-
-    .curses__title { 
-        font-size: 7vw;
-        position: relative;
-        top: -5px;
-    }
 
     .curses__content--title {
         font-size: 5vw;
@@ -1127,54 +1198,19 @@ body {
     }
 
     .content__text {
-        font-size: 3vw;
+        font-size: 4vw;
     }
-
-    .material__title {
-        font-size: 7vw;
-    }
-
 
 }
 
 
 @media (max-width: 645px) {
-    .learn__main {
-        margin: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .learn {
-        margin: 25px 80px;
-    }
-
-    .learn__title {
-        font-size: 35px;
-    }
-    
-    .learn__img--second {
-        width: 90vw;
-        top: 60px;
-        left: -80px;
-    }
-    
-    .learn__text {
-        margin-left: 40px;
-    }
-
 
     .info__input {
         font-size: 1em;
-        height: 50px;
     }
 
     /* CURSES */
-
-    .curses__title { 
-        position: relative;
-        top: -10px;
-    }
 
     .curses__content--title {
         font-size: 6vw;
@@ -1204,24 +1240,6 @@ body {
         width: 3.5vw;
     }
 
-    .learn {
-        top: 50px;
-    }
-    
-    .learn__text {
-        margin-left: 40px;
-        font-size: 20px;
-    }
-
-    .learn__title {
-        width: 300px;
-        grid-column-start: 1;
-    }
-
-    .info {
-        height: 500px;
-    }
-
     .info__input {
         font-size: 1em;
         height: 50px;
@@ -1231,33 +1249,36 @@ body {
     /* US */
     .know__title--mobile, .what__title--mobile, .who__title--mobile {
         align-self: center;
-        font-size: 2.3vh;
+        font-size: 5vw;
+        text-align: center;
     }
 
-    .team {
-        margin-bottom: 5vh;
+    .team__gugo {
+        display: flex;
+        flex-direction: column;
     }
 
     .team__title {
-        font-size: 3vh;
+        font-size: 7vw;
     }
     
     .team__img {
-        width: 10vh;
+        width: 20vw;
     }
     
     
     .team__us--title {
-        font-size: 2.4vh;
+        font-size:6vw;
 
+    }
+
+    .team__us {
+        margin: 10px 0;
     }
     
     .team__us--text {
-        font-size: 2vh;
-    }
-
-    .what__title--mobile, .who__title--mobile, .know__title--mobile {
-        font-size: 3vw;
+        font-size: 4vw;
+        width: 200px;
     }
 
     .know__img--mobile, .what__img--mobile {
@@ -1269,20 +1290,23 @@ body {
     }
 
     /* CURSES */
-    .curses__title {
-        top: 15px;
-    }
 }
 
 @media (max-width: 550px) {
-    .info {
-        margin: 0 80px 0px 80px;
-        height: 400px;
-    }
     .info__input {
         height: 40px;
     }
+
+    .learn__main {
+        margin: 0;
+        height: 100%;
+        align-self: center;
+    }
     
+    .learn {
+        grid-template-columns: 1fr 0.5fr 1fr;
+
+    }
 
     .learn__text {
         font-size: 20px;
@@ -1290,13 +1314,8 @@ body {
 
     .learn__title {
         grid-column-start: 1;
-        font-size: 30px;
+        font-size: 8vw;
         width: 10em;
-    }
-
-    /* CURSES */
-    .curses__title {
-        font-size: 10vw;
     }
 }
 
@@ -1313,24 +1332,8 @@ body {
 
     /* INDEX */
 
-    .learn__main {
-        grid-template-rows: 1.2fr 1fr;
-        grid-gap: 0;
-    }
-
-    .learn__text {
-        width: 150px;
-        top: 80px;
-        margin-left: 0;
-    }
-
     .info__input {
         height: 30px;
-    }
-
-    .info {
-        height: 20em;
-        justify-self: center;
     }
 
     .info__title {
@@ -1346,12 +1349,12 @@ body {
         width: 50vw;
     }
 
-    /* US */
-    .know__title, .curses__title, .material__title {
-        color: #D1D1D1;
-        margin: 4vh 0 5vh 0;
-        font-size: 4vh;
+
+    .general__title {
+        font-size: 9vw;
     }
+
+    /* US */
     
 
     .know__v--mobile, .what__img--mobile, .how__img--mobile {
@@ -1359,14 +1362,6 @@ body {
     }
 
     /* CURSES */
-
-    .curses__title { 
-        font-size: 10vw;
-        position: relative;
-        top: 0;
-        left: 25px;
-    }
-
     .curses__content--title {
         font-size: 6vw;
     }
@@ -1386,13 +1381,17 @@ body {
 
     /* MATERIAL */ 
 
-    .material__title {
-        margin-left: 8vw;
-    }
-
     .material__download, .material__level {
         width: 20vw;
         font-size: 2.5vw;
+    }
+
+    .content__title {
+        font-size: 7vw;
+    }
+
+    .content__text {
+        font-size: 5vw;
     }
 }
 
@@ -1410,32 +1409,8 @@ body {
 
     /* INDEX */
 
-    .learn {
-        position: relative;
-        top: 30px;
-        left: -20px;
-        justify-self: center;
-    }
-
-    .learn__main {
-        grid-template-rows: 1fr 1fr;
-    }
-
-
     .learn__text {
-        width: 100px;
-        top: 70px;
         font-size: 15px;
-        left: 90px;
-    }
-
-    .learn__title {
-        font-size: 1.4em;
-    }
-
-    .info {
-        top: 0;
-        height: 350px;
     }
 
     .info__form {
@@ -1468,25 +1443,7 @@ body {
         width: 5vw;
     }
 
-    .learn__text {
-        top: 70px;
-        font-size: 14px;
-        width: 100px;
-        left: 50px;
-    }
 
-    .learn__img--second {
-        left: -80px;
-    }
-
-    .learn__title {
-        font-size: 1.2em;
-        left: -20px;
-    }
-
-    .info {
-        align-self: center;
-    }
 
     /* CURSES */
 
@@ -1499,18 +1456,7 @@ body {
 }
 
 @media (max-width: 280px) {
-    .learn {
-        position: relative;
-        top: 40px;
-    }
 
-    .learn__img--second {
-        width: 250px;
-    }
-
-    .info {
-        top: -10px;
-    }
     /* MATERIAL */
     .material__download, .material__level {
         width: 15vw;
