@@ -615,7 +615,7 @@ body {
     grid-row-end: 4;
     background-color: rgb(237, 209, 110);
     color: #fff;
-    width: 100px;
+    width: 20%;
     text-align: center;
     border-radius: 15px;
     font-size: 2vw;
@@ -1163,13 +1163,13 @@ body {
     }
 
     .know__text--mobile {
-        font-size: 2.8vw;
+        font-size: 4vw;
     }
 
     .know__li--mobile {
         text-align: center;
         list-style-position: inside;
-        font-size: 2.8vw;
+        font-size: 4vw;
     }
 
     /* CURSES */
@@ -1194,7 +1194,7 @@ body {
     }
 
     .content__text {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
 }
@@ -1245,7 +1245,8 @@ body {
     /* US */
     .know__title--mobile, .what__title--mobile, .who__title--mobile {
         align-self: center;
-        font-size: 2.3vh;
+        font-size: 5vw;
+        text-align: center;
     }
 
     .team__gugo {
@@ -1274,10 +1275,6 @@ body {
     .team__us--text {
         font-size: 4vw;
         width: 200px;
-    }
-
-    .what__title--mobile, .who__title--mobile, .know__title--mobile {
-        font-size: 3vw;
     }
 
     .know__img--mobile, .what__img--mobile {
@@ -1383,6 +1380,14 @@ body {
     .material__download, .material__level {
         width: 20vw;
         font-size: 2.5vw;
+    }
+
+    .content__title {
+        font-size: 7vw;
+    }
+
+    .content__text {
+        font-size: 5vw;
     }
 }
 
