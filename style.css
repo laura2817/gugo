@@ -249,8 +249,8 @@ body {
 
 /* Primera sección */
 
-.know, .blog, .curses, .material__main {
-    width: 100%;
+.know__main, .blog, .curses__main, .material__main {
+    width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -259,10 +259,10 @@ body {
 }
 
 .general__title {
-    width: 100%;
     color: #D1D1D1;
-    font-size: 380%;
-    margin: 4vw 0;
+    align-self: flex-start;
+    font-size: 5vw;
+    margin: 4vw 0 8vw 0;
     position: relative;
     z-index: 30;
 }
@@ -279,7 +279,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 15%;
 }
 
 .know__img, .know__img--two {
@@ -309,7 +309,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+}
+
+.team {
+    margin-bottom: 10%;
 }
 
 .team__title {
@@ -352,6 +355,7 @@ body {
 /* CURSOS */
 
 .curses {
+    width: 100%;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -799,7 +803,7 @@ body {
     }
 
     .home__img {
-        width: 10%;
+        width: 25%;
         margin-left: 5vw;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -827,6 +831,10 @@ body {
         grid-row-end: 3;
     }
 
+    .general__title {
+        font-size: 7vw;
+    }
+
     /* INDEX */
 
     .learn__main {
@@ -842,8 +850,9 @@ body {
 
     .learn {
         display: grid;
+        width: 100%;
         align-items: center;
-        margin: 60px 50px;
+        margin: 60px 0;
         grid-template-columns: 1fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 1fr;
         position: relative;
@@ -868,6 +877,7 @@ body {
     }
 
     .learn__text {
+        width: 95%;
         font-size: 3vw;
         grid-column-start: 2;
         grid-column-end: 4;
@@ -913,6 +923,7 @@ body {
     
     .info__title {
         font-size: 3vw;
+        line-height: 40px;
     }
     
     .info__input {
@@ -1098,7 +1109,7 @@ body {
     }
 
     .material__name {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
 }
@@ -1292,6 +1303,10 @@ body {
         align-self: center;
     }
     
+    .learn {
+        grid-template-columns: 1fr 0.5fr 1fr;
+
+    }
 
     .learn__text {
         font-size: 20px;
@@ -1299,7 +1314,7 @@ body {
 
     .learn__title {
         grid-column-start: 1;
-        font-size: 30px;
+        font-size: 8vw;
         width: 10em;
     }
 }
@@ -1332,6 +1347,11 @@ body {
 
     .button {
         width: 50vw;
+    }
+
+
+    .general__title {
+        font-size: 9vw;
     }
 
     /* US */
