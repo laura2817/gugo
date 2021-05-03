@@ -230,10 +230,34 @@ function checkUser(json, us, cl){
 function toggleNav(e){
   e.preventDefault()
   let nav = document.getElementsByClassName("home__nav")[0]
-  document.getElementsByClassName("img__button")[0].src = nav.classList.toggle("home__nav__active") ? "img/x.png" :  "img/button.png"
+  nav.classList.toggle("home__nav__active")
+  changeButton(nav)
 }
 
 function showOn(){
   let nav =  document.getElementsByClassName("home__nav")[0]
     window.matchMedia("(max-width: 1030px)").matches ?  nav.classList.remove("home__nav__active")  :  nav.classList.add("home__nav__active")
+	changeButton(nav)
 }
+
+function changeButton(nav){
+	  document.getElementsByClassName("img__button")[0].src = nav.classList.contains("home__nav__active") ? "img/x.png" :  "img/button.png"	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
