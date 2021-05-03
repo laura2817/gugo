@@ -1,7 +1,7 @@
 const posteos = [
 	{
 	"titulo":"Nada",
-	"texto":"lorem",
+	"texto":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam veritatis deserunt expedita quia ducimus, maiores culpa quaerat optio. Quo harum deserunt est culpa? Aliquid illo dolor incidunt eligendi eos, nobis iure non officiis voluptatum est harum ullam quidem cupiditate perferendis beatae? Commodi, saepe ea molestiae tempora harum dolores quidem explicabo vitae modi beatae ducimus architecto dolorum consequuntur reiciendis perspiciatis, adipisci temporibus, quis veniam. Nam inventore neque illum rerum corporis!Lorem ipsum dolor",
     "year":"2021",
 	"alumno":"Pepe",
     "imagen":"imagen1.jpg",
@@ -10,7 +10,7 @@ const posteos = [
 	
 	,{
 	"titulo":"Nada2",
-	"texto":"lorem2",
+	"texto":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam veritatis deserunt expedita quia ducimus, maiores culpa quaerat optio. Quo harum deserunt est culpa? Aliquid illo dolor incidunt eligendi eos, nobis iure non officiis voluptatum est harum ullam quidem cupiditate perferendis beatae? Commodi, saepe ea molestiae tempora harum dolores quidem explicabo vitae modi beatae ducimus architecto dolorum consequuntur reiciendis perspiciatis, adipisci temporibus, quis veniam. Nam inventore neque illum rerum corporis!",
     "year":"2022",
 	"alumno":"Pepe2",
     "imagen":"imagen2.jpg",
