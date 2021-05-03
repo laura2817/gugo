@@ -96,11 +96,7 @@ body {
 
 /*home__li*/
 .activo { 
-<<<<<<< HEAD
 	border-bottom: 4px solid rgba(0, 68, 133, 0.5);
-=======
-	border-bottom: 4px solid rgb(0, 68, 133);
->>>>>>> bbc7ea703f317a71c177ec9353d03840f3336ee0
 }
 
 /* footer */
