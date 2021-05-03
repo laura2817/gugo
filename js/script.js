@@ -124,7 +124,7 @@ return (`
 
 `)}
 const usuarios = {
-	user: "pedro" , pass : "123" , level: "NIVEL X"
+	
 }
 
 
@@ -196,7 +196,7 @@ function sesion(){
 			alert("Nombre de usuario o contraseña erroneos")
 		}
 	}
-    existe_sesion()
+    //existe_sesion()
     hide_login("login")
 }
 
