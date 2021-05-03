@@ -52,6 +52,7 @@ body {
     box-shadow: 0 0 10px 1px #999999;
     width: 100%;
     height: auto;
+	overflow: hidden;
 }
 
 .home__img {
@@ -833,12 +834,22 @@ body {
 		
     }
 
-    .home__nav {
-        grid-column-start: 1;
+    .home__nav{
+		grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
+		max-height: 0;
+		transition: all 0.4s ease-out;
+		overflow: hidden;
     }
+	
+	.home__nav__active {
+		max-height: 650px;
+		transition: all 0.6s ease-out;
+	}
+	
+	
 
     .general__title {
         font-size: 7vw;
