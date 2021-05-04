@@ -574,7 +574,7 @@ body {
     width: 93%;
     display: grid;
     grid-template-columns: .8fr 1fr;
-    grid-template-rows: .1fr 1fr .3fr;
+    grid-template-rows: 0.1fr 1fr .1fr;
     grid-gap: 5px;
     justify-content: center;
     align-items: center;
@@ -596,6 +596,7 @@ body {
 
 
 .blog__title--two {
+	padding-bottom: 2px;
     grid-column-start: 2;
     grid-column-end: 3;
     font-size: 3vw;
@@ -1153,7 +1154,7 @@ body {
 
     /* BLOG */
     .blog__items {
-    grid-template-rows: .1fr 1fr .1fr;
+    grid-template-rows: .01fr 1fr .1fr;
 
     }
 

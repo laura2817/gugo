@@ -12,9 +12,10 @@ function postCard(post){
 	return( 
 		`
             <div class="blog__items">
-
-				<iframe width=100% src='https://view.officeapps.live.com/op/embed.aspx?src=http://www.gugoweb.com/demo/blog/w1.docx' frameborder='0'></iframe>
+				<h2 class="blog__title--two title">${post.titulo}</h2>
 				
+				${generaWord( `${post.archivo}` )}
+
                 <time class="blog__time">${post.year}</time> <span class="blog__name--span">${post.alumno}</span>
                 <div class="blog__content--img">
                     <img class="blog__img" src="blog/img/${post.imagen}" alt="blog-img">
@@ -32,5 +33,22 @@ function lista(myList, idDestino = "posteos"){
 		 destino.innerHTML += postCard(myList[i])
     }
 }
+
+function generaWord(filename){
+let web = "http://www.gugoweb.com/demo/blog/"
+let archivo = web + filename
+
+
+let respuesta = 
+	`
+				<iframe height="100%" width="100%" 
+				src='https://view.officeapps.live.com/op/embed.aspx?src=${archivo}' 
+				frameborder='0'>
+				</iframe>
+	`
+console.log(respuesta)
+	return respuesta
+}
+
 
 
