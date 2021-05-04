@@ -4,12 +4,12 @@
 
 setTimeout(function(){ lista(posteos,"posteos"); }, 1200);
 
+				//<h2 class="blog__title--two title">${post.titulo}</h2>
 
 function postCard(post){
 	return( 
 		`
             <div class="blog__items">
-				<h2 class="blog__title--two title">${post.titulo}</h2>
 				
 				${generaWord( `${post.archivo}` )}
                 
