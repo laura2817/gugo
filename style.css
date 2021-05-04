@@ -207,6 +207,13 @@ body {
     font-size: 1vw;
     border-radius: 5px;
     border: none;
+
+}
+
+.spaced{
+	font-size: 1.2vw;
+	padding-left: 5%;	
+	
 }
 
 .info__title {

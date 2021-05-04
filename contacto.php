@@ -5,7 +5,7 @@ $email = $_GET['pemail'];
 $phone = $_GET['pphone'];
 
 $formcontent	="Nombre: ".$name. "\n Apellido:  " .$lname. "\n Correo:  " .$email. "\n Telefono:  " .$phone;
-$recipient 		= "correo@degugo.com";
+$recipient 		= "Info@gugoweb.com";
 $from 			= "contactosWeb@gugoweb.com";
 $subject 		= "Contacto de la Web " .$name;
 $mailheader 	= "From:" . $from;

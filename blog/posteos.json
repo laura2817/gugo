@@ -1,10 +1,23 @@
 const posteos = [
 	{
-	"titulo":"Nada",
-	"texto":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam veritatis deserunt expedita quia ducimus, maiores culpa quaerat optio. Quo harum deserunt est culpa? Aliquid illo dolor incidunt eligendi eos, nobis iure non officiis voluptatum est harum ullam quidem cupiditate perferendis beatae? Commodi, saepe ea molestiae tempora harum dolores quidem explicabo vitae modi beatae ducimus architecto dolorum consequuntur reiciendis perspiciatis, adipisci temporibus, quis veniam. Nam inventore neque illum rerum corporis!Lorem ipsum dolor",
-    "year":"2021",
-	"alumno":"Pepe",
-    "imagen":"imagen1.jpg",
+	
+	
+	"titulo":"El Día Negro y el jajangmyeon",
+	
+	
+	"texto":"Al igual como se celebra el Día del Amor y la Amistad en muchos países, en Corea, existe una celebración no oficial que es para los solteros, la cual se conoce como el Día Negro, también llamado Black Day, y se festeja cada 14 de abril. Aunque no todos los coreanos le dan mucha importancia a este día es cierto que la mayoría conoce qué es, cómo y por qué se celebra. Por lo que, hoy hablaré sobre el origen y el significado de esta fiesta además del platillo más conocido para celebrarla, el jajangmyeon (짜장면)\n\n“El Día Negro”: el motivo de que se le llame así es porque se hace contraste al Día de San Valentín y al Día Blanco celebrado el 14 de febrero y el 14 de marzo, respectivamente. En el Día de San Valentín, las mujeres suelen regalar chocolates a los hombres, mientras que, el Día Blanco es el día cuando los hombres corresponden el gesto del regalo a las mujeres. Lo que hace el Día Negro más especial es que, a diferencia de estos dos días cuyo origen es el extranjero, este día es celebrado principalmente por solteros de Corea del Sur.\n\nEl jajangmyeon, el platillo más degustado para celebrar el Día Negro. Ahora te estarás preguntando cómo se celebra este día. Ya sea solo o acompañado, la particularidad es vestirse de negro y comer cualquier platillo de color negro. Entre ellos, el más conocido es el platillo llamado jajangmyeon y las personas que no recibieron regalos en las dos fechas anteriores suelen reunirse y comerlo juntos.\n\nLa palabra Jajang (자장) o jjajang (짜장) literalmente significa salsa frita y myeon (면) significa fideos. Como su nombre dice, este platillo consiste en fideos gruesos de trigo y lleva una salsa un poco dulce, espesa y oscura, por lo que queda acorde a la ocasión. Dicha salsa se prepara con una pasta de frijoles negros de soja fermentada llamada chunjang (춘장), a la que se le agrega almidón de patata o maicena para que se espese. Y por último, se le añade cebolla, calabacín y carne o mariscos en trozos. Se suele acompañar con danmuji (단무지), el rábano encurtido y por supuesto, también con el kimchi.\nEn cuanto al origen del jajangmyeon, el hecho conocido es que fue el restaurante de comida china llamado “Gonghwachun” que en el año 1905 comenzó a servir este platillo popular adaptando el tradicional platillo chino “zhajiangmian”, que literalmente significa fideos en salsa frita, al gusto de los consumidores coreanos. Por lo tanto, el jajangmyeon es una versión coreana de un platillo chino que ya es uno de los platillos coreanos más típicos y populares no sólo entre los coreanos sino también entre los extranjeros que visitan el país.\nExisten diferentes versiones de jajangmyeon, entre ellas están:\n- Ganjajangmyeon (간자장면): esta versión es la más normal que no lleva el almidón en la salsa y los fideos se sirven en un plato aparte.\n- Samseon jajangmyeon (삼선자장면): incluye mariscos como el calamar, camarones y pepino de mar, pero nunca lleva pescado.\n- Samseon ganjajangmyeon (삼선간자장면): es simiar a la versión normal, pero los mariscos se sirven aparte.\n- Jajangbap (자장밥): consiste en arroz hervido o frito acompañado de la salsa jajang.\n\nEl comer jajangmyeon celebrando el Día Negro puede ser una manera de matar dos pájaros de un tiro: disfrutar de uno de los platillos más populares de Corea y, al mismo tiempo, reflexionar sobre la cultura relacionada con la soltería en el país. En Occidente no le damos importancia a la soltería. ¿Qué les parece? ¿Les gustaría adoptar esta celebración?\n",
+    
+	
+	"year":"2021",
+	
+	
+	"alumno":"Laura López Velázquez ",
+    
+	
+	"imagen":"imagen1.jpg",
+	
+	
+	
 	}
 	
 	
