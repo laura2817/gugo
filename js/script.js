@@ -124,7 +124,7 @@ return (`
 
 `)}
 const usuarios = {
-	user: "pedro" , pass : "123" , level: "NIVEL X"
+	
 }
 
 
@@ -196,7 +196,7 @@ function sesion(){
 			alert("Nombre de usuario o contraseña erroneos")
 		}
 	}
-    existe_sesion()
+    //existe_sesion()
     hide_login("login")
 }
 
@@ -229,19 +229,35 @@ function checkUser(json, us, cl){
 
 function toggleNav(e){
   e.preventDefault()
-  
-  let nav          = document.getElementsByClassName("home__nav")[0]
-  let imagen_boton = document.getElementsByClassName("img__button")[0]
-  
-  imagen_boton.src = ( nav.style.display = nav.style.display === "none" ? "block" : "none" ) === "none" ? "img/button.png" : "img/x.png"
+  let nav = document.getElementsByClassName("home__nav")[0]
+  nav.classList.toggle("home__nav__active")
+  changeButton(nav)
 }
 
 function showOn(){
   let nav =  document.getElementsByClassName("home__nav")[0]
-    nav.style.display = window.matchMedia("(max-width: 1030px)").matches ? "none" : "block";
+    window.matchMedia("(max-width: 1030px)").matches ?  nav.classList.remove("home__nav__active")  :  nav.classList.add("home__nav__active")
+	changeButton(nav)
+}
+
+function changeButton(nav){
+	  document.getElementsByClassName("img__button")[0].src = nav.classList.contains("home__nav__active") ? "img/x.png" :  "img/button.png"	
 }
 
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

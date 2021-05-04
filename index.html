@@ -54,13 +54,15 @@
         </div>
         <section class="info"> 
             <h2 class="info__title title">Estudiá Coreano con Gugó</h2>
-            <form class="info__form" action="post">
-                <input class="info__input info__name" type="text" id="name" required placeholder="Nombre">
-                <input class="info__input info__lastname" type="text" id="lastname" required placeholder="Apellido">
-                <input class="info__input info__mail" type="email" id="mail" required placeholder="Mail">
-                <input class="info__input info__cell" type="number" id="number" required placeholder="Teléfono">
-                <input class="info__input button" type="submit" value="Obtener más información" id="send">
+            
+            <form class="info__form" action="contacto.php" type="POST" name="FormularioContacto">
+                <input class="info__input info__name"      type="text"     name="pname"       id="name"       required placeholder="Nombre">
+                <input class="info__input info__lastname"  type="text"     name="plastname"   id="lastname"   required placeholder="Apellido">
+                <input class="info__input info__mail"      type="email"    name="pemail"      id="mail"       required placeholder="Mail">
+                <input class="info__input info__cell"      type="number"   name="pphone"      id="number"     required placeholder="Teléfono">
+                <input class="info__input button"          type="submit"   value="Obtener más información" id="send">
             </form>
+
         </section>
         <div class="info__content">
             <img class="info__img" src="img/vector.png" alt="vector">
