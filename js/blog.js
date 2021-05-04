@@ -1,12 +1,9 @@
-
 //la variable con los compos esta en posteos.json y se llama posteos
 //Genera las Card de descarga de los archivos
 //archivo viene con "nombre", "enlace", "ext" extension
 
 setTimeout(function(){ lista(posteos,"posteos"); }, 1200);
 
-                //<p class="blog__text text">${post.texto}</p>
-                //<h2 class="blog__title--two title">${post.titulo}</h2>
 
 function postCard(post){
 	return( 
@@ -15,8 +12,8 @@ function postCard(post){
 				<h2 class="blog__title--two title">${post.titulo}</h2>
 				
 				${generaWord( `${post.archivo}` )}
-
-                <time class="blog__time">${post.year}</time> <span class="blog__name--span">${post.alumno}</span>
+                
+				<time class="blog__time">${post.year}</time> <span class="blog__name--span">${post.alumno}</span>
                 <div class="blog__content--img">
                     <img class="blog__img" src="blog/img/${post.imagen}" alt="blog-img">
                 </div>
@@ -34,19 +31,19 @@ function lista(myList, idDestino = "posteos"){
     }
 }
 
-function generaWord(filename){
-let web = "http://www.gugoweb.com/demo/blog/"
-let archivo = web + filename
+function generaWord(filename,folder="blog/"){
+let ww = window.location.href
+let ws = ww.split("/")
 
+let archivo = ww.slice(0, ww.length - ws[ws.length-1].length)+ folder + filename
 
 let respuesta = 
 	`
-				<iframe height="100%" width="100%" 
+				<iframe class="blog__iframe" height="100%" width="100%" 
 				src='https://view.officeapps.live.com/op/embed.aspx?src=${archivo}' 
 				frameborder='0'>
 				</iframe>
 	`
-console.log(respuesta)
 	return respuesta
 }
 
