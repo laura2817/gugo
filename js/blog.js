@@ -5,16 +5,14 @@
 setTimeout(function(){ lista(posteos,"posteos"); }, 1200);
 
 				//<h2 class="blog__title--two title">${post.titulo}</h2>
-
+				//<time class="blog__time">${post.year}</time>
+				 //<span class="blog__name--span">${post.alumno} - ${post.year}</span>
 function postCard(post){
 	return( 
 		`
             <div class="blog__items">
-				
 				${generaWord( `${post.archivo}` )}
-                
-				<time class="blog__time">${post.year}</time> <span class="blog__name--span">${post.alumno}</span>
-                <div class="blog__content--img">
+				<div class="blog__content--img">
                     <img class="blog__img" src="blog/img/${post.imagen}" alt="blog-img">
                 </div>
             </div>
@@ -22,7 +20,7 @@ function postCard(post){
 	)
 }
 
-//Genera la lista de archivos en Html
+//Genera la lista de archivos en el Html
 function lista(myList, idDestino = "posteos"){
 	destino = document.getElementById(idDestino)
 	destino.innerHTML = ""
@@ -31,20 +29,18 @@ function lista(myList, idDestino = "posteos"){
     }
 }
 
-function generaWord(filename,folder="blog/"){
-let ww = window.location.href
-let ws = ww.split("/")
+function generaWord(filename,folder="blog/doc/"){
+let ws = window.location.href.split("/")
+let archivo = window.location.href.slice(0, window.location.href.length - ws[ws.length-1].length)+ folder + filename
 
-let archivo = ww.slice(0, ww.length - ws[ws.length-1].length)+ folder + filename
-
-let respuesta = 
-	`
-				<iframe class="blog__iframe" height="100%" width="100%" 
-				src='https://view.officeapps.live.com/op/embed.aspx?src=${archivo}' 
-				frameborder='0'>
-				</iframe>
-	`
-	return respuesta
+return(`
+	
+		<iframe class="blog__iframe" height="100%" width="100%" 
+			src='https://view.officeapps.live.com/op/embed.aspx?src=${archivo}' 
+			frameborder='0'>
+		</iframe>
+	
+	`)
 }
 
 

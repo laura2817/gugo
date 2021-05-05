@@ -1,15 +1,29 @@
+/*Para editar esta lista, simplemente colocar entre comillas los valores indicados
+Archivo, es el nombre del archivo que se colocara en la carpeta Blog del servidor.
+Year, es el año que se vera en la parte inferior del post.
+Alumno, es el nombre del alumno que se vera en la parte inferior del post.
+Imagen, es el nombre de la imagen que se vera a la izquierda del post, estas van en blog/img/ 
+	el tamaño recomendado es 500x600.
+	
+Para crear una nueva entrada, hay que copiar y pegar todo el contenido de las llaves separados por comas.
+
+Esta es la estructura
+	[ {post},{post} ]
+donde post, se debe reemplazar por cada campo, separado por comas
+	"archivo":"archivo.docx","year":"2021","alumno":"Laura López Velázquez ","imagen":"1.jpg"
+Se puede hacer un salto de linea al final de cada uno para mas comodidad.
+
+*/
+
 const posteos = [
 	{
-	"titulo":"El Día Negro y el jajangmyeon",
 	"archivo":"1.docx",
     "year":"2021",
 	"alumno":"Laura López Velázquez ",
     "imagen":"1.jpg",
 	}
-	
-	
+
 	,{
-	"titulo":"Atletas del Sudeste Asiático se preparan en Corea de cara a los JJ.OO. de invierno Pekín 2022",
 	"archivo":"2.docx",
     "year":"2021",
 	"alumno":"Lee Kyoung Mi y Elías Molina",

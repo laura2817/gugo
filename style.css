@@ -267,6 +267,7 @@ body {
 }
 
 .general__title {
+	padding-left:5%;
     color: #D1D1D1;
     align-self: flex-start;
     font-size: 5vw;
@@ -573,8 +574,8 @@ body {
 .blog__items {
     width: 93%;
     display: grid;
-    grid-template-columns: .8fr 1fr;
-    grid-template-rows: 0.1fr 1fr .1fr;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 5px;
     justify-content: center;
     align-items: center;
@@ -595,29 +596,12 @@ body {
 }
 
 
-.blog__title--two {
-	padding-bottom: 2px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-size: 3vw;
-    color: rgb(196, 26, 45);
-}
-
-.blog__text {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1vw;
-    line-height: 20px;
-}
-
 .blog__content--img {
     background-color: rgb(210, 210, 210);
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 1;
     width: 100%;
     height: 100%;
 }
@@ -625,19 +609,6 @@ body {
 .blog__img {
     width: 100%;
     height: 100%;
-}
-
-.blog__time {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: rgb(237, 209, 110);
-    color: #fff;
-    width: 30%;
-    text-align: center;
-    border-radius: 15px;
-    font-size: 2vw;
 }
 
 .blog__name--span {
@@ -649,6 +620,13 @@ body {
     width: 50%;
     font-size: 1.5vw;
 }
+.blog__iframe{
+	Grid-column-start: 2 ;
+	Grid-column-end: 2 ;
+	Grid-row-start: 1;
+	Grid-row-end: 1;
+	border-radius: 10px;
+	}
 
 
 
@@ -1154,12 +1132,29 @@ body {
 
     /* BLOG */
     .blog__items {
-    grid-template-rows: .01fr 1fr .1fr;
-
+		grid-template-columns: 1fr;
+		grid-template-rows: .3fr 1fr;
+		min-height:350px;
     }
-
+	
+	.blog__content--img{
+			Grid-column-start: 1 ;
+			Grid-column-end: 1 ;
+			Grid-row-start: 1;
+			Grid-row-end: 1;
+	}
+	
+	.blog__iframe{
+			Grid-column-start: 1 ;
+			Grid-column-end: 1 ;
+			Grid-row-start: 2;
+			Grid-row-end: 2;
+	}
+	
+	
     .blog__items:nth-child(2) {
         margin-top: 50px;
+		min-height:350px;
     }
 
     .blog__text, .blog__name--span, .blog__time {
